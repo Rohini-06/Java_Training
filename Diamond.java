@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Diamond {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        //upper half
+        for (int r = 1; r <= n; r++) {
+            for (int s = 1; s <= n - r; s++) {
+                System.out.print(" ");
+            }
+            for (int c = 1; c <= 2 * r - 1; c++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        //lower half
+        for(int r=n-1;r>=1;r--){
+            for(int s=n;s>r;s--){
+                System.out.print(" ");
+            }
+            for(int c=1; c<=2*r-1;c++ ){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
