@@ -6,5 +6,7 @@ public class strequ {
         System.out.println(s1==s2);
         System.out.println(s1.equals(s2));
         System.out.print(s1.length());
+        System.out.println(s1.charAt(3));
+        System.out.print(s1.charAt(4));
     }
 }
